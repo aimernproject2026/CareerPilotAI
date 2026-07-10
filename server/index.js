@@ -14,7 +14,7 @@ import coverLetterRouter from "./routes/coverLetter.route.js"
 
 const app = express()
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://careerpilotai-fep2.onrender.com",
     credentials:true
 }))
 
