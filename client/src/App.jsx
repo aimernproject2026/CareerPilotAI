@@ -15,7 +15,7 @@ import JobFinder from './pages/JobFinder'
 import CoverLetter from './pages/CoverLetter'
 
 
-export const ServerUrl = "http://localhost:8000"
+export const ServerUrl = "https://careerpilotai-backend-9wsy.onrender.com"
 
 function App() {
 
