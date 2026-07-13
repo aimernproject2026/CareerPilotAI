@@ -107,9 +107,9 @@ export const generateQuestion = async (req, res) => {
       });
     }
 
-    if (user.credits < 50) {
+    if (user.credits < 5) {
       return res.status(400).json({
-        message: "Not enough credits. Minimum 50 required."
+        message: "Not enough credits. Minimum 5 required."
       });
     }
 
@@ -293,7 +293,7 @@ IMPORTANT:
       });
     }
 
-    user.credits -= 50;
+    user.credits -= 5;
     await user.save();
 
     const interview = await Interview.create({
